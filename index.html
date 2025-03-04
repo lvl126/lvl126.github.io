@@ -49,12 +49,12 @@
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
-            background: linear-gradient(90deg, #ffffff, #e0f0ff, #ffffff);
+            background: linear-gradient(90deg, #b8d8ff, #a3c9ff, #b8d8ff);
             background-size: 200% auto;
             color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(224, 240, 255, 0.4);
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
             animation: shine 3s linear infinite;
             padding: 5px 10px;
             border-radius: 5px;
@@ -63,8 +63,17 @@
         }
         
         @keyframes shine {
-            to {
+            0% {
+                background-position: 0% center;
+                text-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+            50% {
+                background-position: 100% center;
+                text-shadow: 0 0 10px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 0, 0, 0.3);
+            }
+            100% {
                 background-position: 200% center;
+                text-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
             }
         }
         
