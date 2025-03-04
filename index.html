@@ -46,10 +46,26 @@
             font-size: 2rem;
             font-weight: 700;
             letter-spacing: 1px;
-            color: #fff;
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
+            background: linear-gradient(90deg, #ffffff, #7db9e8, #ffffff);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(125, 185, 232, 0.2);
+            animation: shine 3s linear infinite;
+            padding: 5px 10px;
+            border-radius: 5px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
         }
         
         .nav-links {
